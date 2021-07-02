@@ -27,11 +27,11 @@
   <!-- Header -->
   <header class="header">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
+      <div class="row justify-content-between">
+        <div class="col-auto">
           <a href="{{config.base_url}}/" class="logo">{{config.site_title}}</a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-auto" id="search-and-login">
           {{#config.googleoauth}}
           <form class="form-inline float-right">
             {{#config.authentication}} {{#loggedIn}} &nbsp;
